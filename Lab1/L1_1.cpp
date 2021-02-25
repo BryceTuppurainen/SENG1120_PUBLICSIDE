@@ -1,9 +1,7 @@
 #include <iostream>
 #include "../conversions.h"
 
-// This program converts a provided double value in degrees celsius to fahrenheit
-
-double convert_to_fahrenheit(double celsius);
+// This program converts a provided double value in degrees celsius to fahrenheit using the conversions.h header file I've created in the parent directory
 
 int main() {
 
@@ -12,7 +10,7 @@ int main() {
 	while (true) {
 		std::cout << "Input in celsius > ";
 		std::cin >> celsius;
-		std::cout << celsius << " C is equal to " << conversions::Celsius_Fahrenheit(celsius) << " F\n";
+		std::cout << Conversions::Celsius_Fahrenheit(celsius) << "F\n";
 	}
 	return 0;
 }
