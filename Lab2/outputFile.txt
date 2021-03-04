@@ -1,0 +1,8 @@
+Creating first account with initial amount 10
+Balance is 10
+Deposit 100
+Balance is 110
+Withdraw 75
+Balance is 35
+Creating second account with initial amount 0
+Account is empty
