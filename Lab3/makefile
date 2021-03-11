@@ -1,7 +1,7 @@
 CC=g++
 CFLAGS=-c -Wall -std=c++98 
 LDFLAGS=
-SOURCES=portfolioTester.cpp portfolio.cpp account.cpp
+SOURCES=point.cpp dpoint.cpp pointDemo.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
 EXECUTABLE=runTest.exe
 

@@ -7,9 +7,9 @@ int main() {
 
 	portfolio livePortfolio;
 
-	while (1) {
-		std::cout << "\n\n1 - Zero the savings account...\n2 - Zero the cheque account...\n3 - Deposit to savings...\n4 - Deposit to cheque...\n5 - Withdraw from savings...\n6 - Withdraw from cheque...\n7 - Print savings balance...\n8 - Print cheque balance...\nSelect an option $ ";
-		int command;
+	int command = 1;
+	while (command != 0) {
+		std::cout << "\n\n1 - Zero the savings account...\n2 - Zero the cheque account...\n3 - Deposit to savings...\n4 - Deposit to cheque...\n5 - Withdraw from savings...\n6 - Withdraw from cheque...\n7 - Print savings balance...\n8 - Print cheque balance...\n0 - Exit...\nSelect an option $ ";
 		double withdraw;
 		double deposit;
 		std::cin >> command;
@@ -45,6 +45,9 @@ int main() {
 				break;
 			case 8:
 				std::cout << "$" << livePortfolio.cheque_balance() << std::endl;
+				break;
+			case 0:
+				std::cout << "Exit was successful..." << std::endl;
 				break;
 		}
 	}
